@@ -1,0 +1,20 @@
+╭─      ~/Projects/devops-with-docker-23/part1  on    main                                   ✔  at 22:26:40   ─╮
+╰─ sudo docker container run -d -it --name secret-message devopsdockeruh/simple-web-service:ubuntu                      ─╯
+f8c58cdfd359e4008e1f41cca0e8dfaf2f88d8ae23099abb53beee0066ae22ce
+
+╭─      ~/Projects/devops-with-docker-23/part1  on    main                                   ✔  at 22:28:25   ─╮
+╰─ sudo docker ps                                                                                                       ─╯
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED          STATUS         PORTS     NAMES
+f8c58cdfd359   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"   10 seconds ago   Up 9 seconds             secret-message
+
+╭─      ~/Projects/devops-with-docker-23/part1  on    main                                   ✔  at 22:28:35   ─╮
+╰─ sudo docker exec -it secret-message bash                                                                             ─╯
+root@f8c58cdfd359:/usr/src/app# ls
+server  text.log
+root@f8c58cdfd359:/usr/src/app# tail -f text.log 
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-30 19:28:56 +0000 UTC
+2023-03-30 19:28:58 +0000 UTC
+2023-03-30 19:29:00 +0000 UTC
+2023-03-30 19:29:02 +0000 UTC
+2023-03-30 19:29:04 +0000 UTC

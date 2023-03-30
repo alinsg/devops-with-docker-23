@@ -1,0 +1,24 @@
+╭─      ~/Projects/devops-with-docker-23/part1  on    main ?1                                ✔  at 22:51:07   ─╮
+╰─ sudo docker container run -it --name exercise1-4 ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done' 
+Input website:
+helsinki.fi
+Searching..
+sh: 1: curl: not found
+Input website:
+helsinki.fi
+Searching..
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.20.1</center>
+</body>
+</html>
+Input website:
+
+In order to install curl, I've run:
+sudo docker exec -it exercise1-4 bash
+
+Once I entered the container I've run:
+apt-get update
+apt-get install curl (and answered yes to the prompt about the download size)
