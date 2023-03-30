@@ -1,0 +1,7 @@
+╭─      ~/devops-with-docker-23                                                     ✔  at 18:52:17   ─╮
+╰─ sudo docker ps -a                                                                                        ─╯
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+╭─      ~/devops-with-docker-23                                                   1 ✘  at 18:52:47   ─╮
+╰─ sudo docker images                                                                                       ─╯
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE

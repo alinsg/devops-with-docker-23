@@ -1,0 +1,6 @@
+╭─      ~/devops-with-docker-23                                                     ✔  at 18:50:16   ─╮
+╰─ sudo docker ps -a                                                                                        ─╯
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                     PORTS     NAMES
+8cdbd27090ed   nginx     "/docker-entrypoint.…"   44 seconds ago   Up 43 seconds              80/tcp    trusting_murdock
+b9ee7482fc72   nginx     "/docker-entrypoint.…"   49 seconds ago   Up 49 seconds              80/tcp    beautiful_napier
+139bb25ff38c   nginx     "/docker-entrypoint.…"   51 seconds ago   Exited (0) 5 seconds ago             musing_black
