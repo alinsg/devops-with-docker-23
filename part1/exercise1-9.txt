@@ -1,0 +1,26 @@
+# I've created a new folder for the exercise. In the folder I've created the file:
+
+touch text.txt
+
+# Ran the command to start the container with a provided mount file.
+╭─      ~/Projects/devops-with-docker-23-playground/logger                 ✔  at 16:52:31   ─╮
+╰─ sudo docker run -v "$(pwd)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service    ─╯
+[sudo] password for alinsg: 
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+
+# File content:
+less text.log
+2023-03-31 13:52:48 +0000 UTC
+2023-03-31 13:52:50 +0000 UTC
+2023-03-31 13:52:52 +0000 UTC
+2023-03-31 13:52:54 +0000 UTC
+2023-03-31 13:52:56 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2023-03-31 13:52:58 +0000 UTC
