@@ -1,0 +1,5 @@
+╭─      ~/Pr/devops-with-docker-23-/material-applications/example-backend  on    main 
+╰─ sudo docker build . -t example-backend 
+
+╭─      ~/Pr/devops-with-docker-23-/material-applications/example-backend  on    main 
+╰─ sudo docker run -p 8080:8080 example-backend
