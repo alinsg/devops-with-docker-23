@@ -1,0 +1,8 @@
+# After adding the environment variable, I've rebuilt the image
+╭─      ~/Pr/devops-with-docker-23-/material-applications/example-backend  on    main 
+╰─ sudo docker build . -t example-backend   
+
+# Then ran the container on port 8080
+╭─      ~/Pr/devops-with-docker-23-/material-applications/example-backend  on    main 
+╰─ sudo docker run -d -p 8080:8080 example-backend                                                 ─╯
+0dbdcc565dac5c0094a0af2d592fa97077d4085e50b2e0d7b2b481233b5adfdc

@@ -1,0 +1,8 @@
+# After adding the REQUEST_ORIGIN environment variable, I've rebuilt the image
+╭─      ~/Pr/devops-with-docker-23-/material-applications/example-frontend  on    main 
+╰─ sudo docker build . -t example-frontend                                                         ─╯
+
+# Then ran the container on port 5000
+╭─      ~/Pr/devops-with-docker-23-/material-applications/example-frontend  on    main 
+╰─ sudo docker run -d -p 5000:5000 example-frontend                                                ─╯
+65d78049d2b261144b3e9a2ded3b58d3c1533404ff56524037326159ea626367
